@@ -1,0 +1,6 @@
+framework module AppCompatPod {
+  umbrella header "AppCompatPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
