@@ -1,13 +1,10 @@
 #import "AppNavigationBar.h"
-#import <CocoaLumberjack/CocoaLumberjack.h>
 
 @interface AppNavigationBar ()
 
 @end
 
 @implementation AppNavigationBar
-
-static const DDLogLevel ddLogLevel = DDLogLevelDebug;
 
 - (instancetype)init:(UINavigationBar *)navigationBar title:(NSString *)title {
     NSBundle *mainBundle = [NSBundle mainBundle];
@@ -18,10 +15,10 @@ static const DDLogLevel ddLogLevel = DDLogLevelDebug;
 }
 
 - (instancetype)init:(UINavigationBar *)navigationBar title:(NSString *)title back:(UIImage *)image {
-    DDLogDebug(@"system navigation %@", NSStringFromCGRect(navigationBar.frame));
-    DDLogDebug(@"system statusBar %@", NSStringFromCGRect([[UIApplication sharedApplication] statusBarFrame]));
+    NSLog(@"system navigation %@", NSStringFromCGRect(navigationBar.frame));
+    NSLog(@"system statusBar %@", NSStringFromCGRect([[UIApplication sharedApplication] statusBarFrame]));
     CGFloat height = navigationBar.frame.origin.y + navigationBar.frame.size.height;
-    DDLogDebug(@"height %f", height);
+    NSLog(@"height %f", height);
     self = [super initWithFrame:CGRectMake(0, 0, navigationBar.frame.size.width, height)];
     if (self) {
         CGFloat x = 0;

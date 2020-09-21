@@ -14,7 +14,6 @@
 @implementation CFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSLog(@"%ld %ld", ddLogLevel, DDLogLevelWarning);
     NSString *a = [DigestUtils md5:@"123"];
     NSLog(@"%@", a);
     a = [DigestUtils sha1:@"123"];
