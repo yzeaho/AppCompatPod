@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "Aes.h"
 #import "AppNavigationBar.h"
 #import "Base64.h"
 #import "DigestUtils.h"

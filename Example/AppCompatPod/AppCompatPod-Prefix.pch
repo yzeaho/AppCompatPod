@@ -6,6 +6,7 @@
 
 #import <Availability.h>
 
+
 #ifndef __IPHONE_5_0
 #warning "This project uses features only available in iOS SDK 5.0 and later."
 #endif
@@ -13,4 +14,6 @@
 #ifdef __OBJC__
     @import UIKit;
     @import Foundation;
+    #import <CocoaLumberjack/CocoaLumberjack.h>
+    static const DDLogLevel ddLogLevel = DDLogLevelWarning;
 #endif

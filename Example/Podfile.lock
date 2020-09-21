@@ -2,9 +2,9 @@ PODS:
   - AppCompatPod (0.0.1):
     - CocoaLumberjack
     - MBProgressHUD (~> 1.2.0)
-  - CocoaLumberjack (3.6.1):
-    - CocoaLumberjack/Core (= 3.6.1)
-  - CocoaLumberjack/Core (3.6.1)
+  - CocoaLumberjack (3.6.2):
+    - CocoaLumberjack/Core (= 3.6.2)
+  - CocoaLumberjack/Core (3.6.2)
   - MBProgressHUD (1.2.0)
 
 DEPENDENCIES:
@@ -21,9 +21,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AppCompatPod: 319a3add72ceb6f4b90247b553ae7e751d1106b2
-  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
+  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
 
 PODFILE CHECKSUM: 9cfa1f3717c24a58911fba6109090cb6896339b8
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0.beta.1

@@ -9,10 +9,12 @@
 #import "CFAppDelegate.h"
 #import <AppCompatPod/DigestUtils.h>
 #import <AppCompatPod/Base64.h>
+#import <AppCompatPod/Aes.h>
 
 @implementation CFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSLog(@"%ld %ld", ddLogLevel, DDLogLevelWarning);
     NSString *a = [DigestUtils md5:@"123"];
     NSLog(@"%@", a);
     a = [DigestUtils sha1:@"123"];
@@ -20,6 +22,10 @@
     a = [Base64 encode:@"1234567890"];
     NSLog(@"%@", a);
     NSLog(@"%@", [Base64 decode:a]);
+    a = [Aes encrypt:@"123" key:@"123"];
+    NSLog(@"%@", a);
+    a = [Aes decrypt:a key:@"123"];
+    NSLog(@"%@", a);
     return YES;
 }
 

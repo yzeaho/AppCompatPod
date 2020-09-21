@@ -8,7 +8,7 @@
 @implementation AppNavigationBar
 
 static const DDLogLevel ddLogLevel = DDLogLevelDebug;
- 
+
 - (instancetype)init:(UINavigationBar *)navigationBar title:(NSString *)title {
     NSBundle *mainBundle = [NSBundle mainBundle];
     NSString *path = [mainBundle pathForResource:@"Frameworks/AppCompatPod.framework/AppCompatPod" ofType:@"bundle"];

@@ -64,8 +64,8 @@
                   &cipherBuffer[0],
                   &cipherBufferSize);
     NSData *data = [NSData dataWithBytes:cipherBuffer length:cipherBufferSize];
+    NSString *r = [data base64EncodedStringWithOptions:0];    
     free(cipherBuffer);
-    NSString *r = [data base64EncodedStringWithOptions:0];
     return r;
 }
 
