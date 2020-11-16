@@ -2,11 +2,6 @@
 
 @implementation MBProgressHUD (Extension)
 
-+ (void)show:(NSString *)text {
-    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
-    [MBProgressHUD show:text view:window];
-}
-
 + (void)show:(NSString *)text view:(UIView *)view {
     [MBProgressHUD show:text view:view afterDelay:1.5];
 }
