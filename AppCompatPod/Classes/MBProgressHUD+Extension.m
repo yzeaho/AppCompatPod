@@ -28,4 +28,30 @@
     });
 }
 
++ (void)show:(NSString *)text
+        view:(UIView *)view
+  completion:(void(^)(void))completion {
+    [MBProgressHUD show:text view:view afterDelay:1.5 completion:completion];
+}
+
++ (void)show:(NSString *)text
+        view:(UIView *)view
+  afterDelay:(NSInteger)delay
+  completion:(void(^)(void))completion {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    hud.mode = MBProgressHUDModeText;
+    hud.detailsLabel.text = text;
+    hud.detailsLabel.textColor = [UIColor whiteColor];
+    hud.detailsLabel.font = hud.label.font;
+    hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
+    hud.bezelView.color = [UIColor colorWithWhite:0.f alpha:1.f];
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delay * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
+        [MBProgressHUD hideHUDForView:view animated:YES];
+        if (completion) {
+            completion();
+        }
+    });
+}
+
 @end

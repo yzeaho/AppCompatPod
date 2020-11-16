@@ -10,7 +10,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)show:(NSString *)text view:(UIView *)view;
 
-+ (void)show:(NSString *)text view:(UIView *)view afterDelay:(NSInteger)delay;
++ (void)show:(NSString *)text
+        view:(UIView *)view
+  afterDelay:(NSInteger)delay;
+
++ (void)show:(NSString *)text
+        view:(UIView *)view
+  completion:(void(^)(void))completion;
+
++ (void)show:(NSString *)text
+        view:(UIView *)view
+  afterDelay:(NSInteger)delay
+  completion:(void(^)(void))completion;
 
 @end
 

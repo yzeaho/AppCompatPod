@@ -22,7 +22,10 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [MBProgressHUD show:@"123"];
+    NSLog(@"1");
+    [MBProgressHUD show:@"123" view:self.view afterDelay:1.0 completion:^{
+        NSLog(@"2");
+    }];
 }
 
 @end
