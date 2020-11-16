@@ -1,5 +1,5 @@
 PODS:
-  - AppCompatPod (1.0.0):
+  - AppCompatPod (1.0.1):
     - MBProgressHUD (~> 1.2.0)
   - MBProgressHUD (1.2.0)
 
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AppCompatPod: 7469ba091c58861401f49c9dc5fd0c3bb40ebfe0
+  AppCompatPod: 762bfb4f82ef9d99288dc388581f115dc1b31feb
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
 
 PODFILE CHECKSUM: 9cfa1f3717c24a58911fba6109090cb6896339b8
 
-COCOAPODS: 1.10.0.beta.1
+COCOAPODS: 1.10.0
