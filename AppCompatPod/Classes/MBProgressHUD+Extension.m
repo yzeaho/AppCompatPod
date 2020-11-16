@@ -2,6 +2,14 @@
 
 @implementation MBProgressHUD (Extension)
 
++ (void)showHUDByContent:(NSString *)text view:(UIView *)view {
+    [MBProgressHUD show:text view:view];
+}
+
++ (void)showHUDByContent:(NSString *)text view:(UIView *)view afterDelay:(NSInteger)delay {
+    [MBProgressHUD show:text view:view afterDelay:delay];
+}
+
 + (void)show:(NSString *)text view:(UIView *)view {
     [MBProgressHUD show:text view:view afterDelay:1.5];
 }
