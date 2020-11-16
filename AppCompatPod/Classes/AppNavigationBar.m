@@ -16,7 +16,6 @@
 
 - (instancetype)init:(UINavigationBar *)navigationBar title:(NSString *)title back:(UIImage *)image {
     NSLog(@"system navigation %@", NSStringFromCGRect(navigationBar.frame));
-    NSLog(@"system statusBar %@", NSStringFromCGRect([[UIApplication sharedApplication] statusBarFrame]));
     CGFloat height = navigationBar.frame.origin.y + navigationBar.frame.size.height;
     NSLog(@"height %f", height);
     self = [super initWithFrame:CGRectMake(0, 0, navigationBar.frame.size.width, height)];
