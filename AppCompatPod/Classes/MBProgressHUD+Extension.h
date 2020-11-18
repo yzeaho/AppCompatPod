@@ -16,12 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)show:(NSString *)text
         view:(UIView *)view
-  completion:(void(^)(void))completion;
+  completion:(void(^ __nullable)(void))completion;
 
 + (void)show:(NSString *)text
         view:(UIView *)view
   afterDelay:(NSInteger)delay
-  completion:(void(^)(void))completion;
+  completion:(void(^ __nullable)(void))completion;
 
 @end
 
