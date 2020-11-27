@@ -41,4 +41,6 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   # s.dependency 'CocoaLumberjack'
   s.dependency 'MBProgressHUD', '~> 1.2.0'
+  s.dependency 'Masonry', '~> 1.0.2'
+  s.dependency 'ReactiveObjC', '~> 3.1.1'
 end

@@ -1,4 +1,5 @@
 #import "AppNavigationBar.h"
+#import "Util.h"
 
 @interface AppNavigationBar ()
 
@@ -7,10 +8,7 @@
 @implementation AppNavigationBar
 
 - (instancetype)init:(UINavigationBar *)navigationBar title:(NSString *)title {
-    NSBundle *mainBundle = [NSBundle mainBundle];
-    NSString *path = [mainBundle pathForResource:@"Frameworks/AppCompatPod.framework/AppCompatPod" ofType:@"bundle"];
-    NSBundle *bundle = [NSBundle bundleWithPath:path];
-    UIImage *image = [UIImage imageNamed:@"ic_back" inBundle:bundle compatibleWithTraitCollection:nil];
+    UIImage *image = [Util imageNamed:@"ic_back"];
     return [self init:navigationBar title:title back:image];
 }
 

@@ -8,6 +8,7 @@
 
 #import "CFViewController.h"
 #import <AppCompatPod/MBProgressHUD+Extension.h>
+#import <AppCompatPod/LoadingView.h>
 
 @interface CFViewController ()
 
@@ -23,12 +24,10 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     NSLog(@"1");
-//    [MBProgressHUD show:@"123" view:self.view afterDelay:1.0 completion:^{
-//        NSLog(@"2");
-//    }];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [MBProgressHUD show:@"abc" view:self.view];
-    });
+    [MBProgressHUD show:@"123" view:self.view afterDelay:1.0 completion:^{
+        NSLog(@"2");
+        [LoadingView show:self.view];
+    }];
 }
 
 @end

@@ -1,22 +1,30 @@
 PODS:
   - AppCompatPod (1.0.5):
+    - Masonry (~> 1.0.2)
     - MBProgressHUD (~> 1.2.0)
+    - ReactiveObjC (~> 3.1.1)
+  - Masonry (1.0.2)
   - MBProgressHUD (1.2.0)
+  - ReactiveObjC (3.1.1)
 
 DEPENDENCIES:
   - AppCompatPod (from `../`)
 
 SPEC REPOS:
   trunk:
+    - Masonry
     - MBProgressHUD
+    - ReactiveObjC
 
 EXTERNAL SOURCES:
   AppCompatPod:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AppCompatPod: 4e2a8257ba4783aa436f7243b743c82db5081ba3
+  AppCompatPod: ddf5c17ed90a60f5298694ebdd3dcfdb6658e64c
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
 
 PODFILE CHECKSUM: 9cfa1f3717c24a58911fba6109090cb6896339b8
 

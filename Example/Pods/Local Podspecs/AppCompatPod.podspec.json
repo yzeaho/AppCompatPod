@@ -27,6 +27,12 @@
   "dependencies": {
     "MBProgressHUD": [
       "~> 1.2.0"
+    ],
+    "Masonry": [
+      "~> 1.0.2"
+    ],
+    "ReactiveObjC": [
+      "~> 3.1.1"
     ]
   }
 }
