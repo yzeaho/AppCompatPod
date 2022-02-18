@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppCompatPod'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'A short description of AppCompatPod.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://git.code.tencent.com/code-father/AppCompatPod.git'
+  s.homepage         = 'https://github.com/yzeaho/AppCompatPod'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yzeaho' => 'yzeaho@qq.com' }
-  s.source           = { :git => 'https://git.code.tencent.com/code-father/AppCompatPod.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/yzeaho/AppCompatPod', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
