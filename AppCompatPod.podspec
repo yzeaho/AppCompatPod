@@ -41,7 +41,7 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   # s.dependency 'CocoaLumberjack'
   s.dependency 'MBProgressHUD', '~> 1.2.0'
-  s.dependency 'Masonry', '~> 1.0.2'
+  s.dependency 'Masonry', :git => 'https://github.com/SnapKit/Masonry.git', :commit => '8bd77ea'
   s.dependency 'ReactiveObjC', '~> 3.1.1'
   s.dependency 'MMKV'
   s.dependency 'AFNetworking'
