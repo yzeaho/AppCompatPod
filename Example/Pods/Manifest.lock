@@ -1,62 +1,34 @@
 PODS:
-  - AFNetworking (4.0.1):
-    - AFNetworking/NSURLSession (= 4.0.1)
-    - AFNetworking/Reachability (= 4.0.1)
-    - AFNetworking/Security (= 4.0.1)
-    - AFNetworking/Serialization (= 4.0.1)
-    - AFNetworking/UIKit (= 4.0.1)
-  - AFNetworking/NSURLSession (4.0.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (4.0.1)
-  - AFNetworking/Security (4.0.1)
-  - AFNetworking/Serialization (4.0.1)
-  - AFNetworking/UIKit (4.0.1):
-    - AFNetworking/NSURLSession
-  - AppCompatPod (1.0.8):
-    - AFNetworking
-    - Masonry (~> 1.0.2)
+  - AppCompatPod (1.0.9):
     - MBProgressHUD (~> 1.2.0)
     - MMKV
     - ReactiveObjC (~> 3.1.1)
-    - SDWebImage
-  - Masonry (1.0.2)
   - MBProgressHUD (1.2.0)
   - MMKV (1.2.12):
     - MMKVCore (~> 1.2.12)
   - MMKVCore (1.2.12)
   - ReactiveObjC (3.1.1)
-  - SDWebImage (5.12.3):
-    - SDWebImage/Core (= 5.12.3)
-  - SDWebImage/Core (5.12.3)
 
 DEPENDENCIES:
   - AppCompatPod (from `../`)
 
 SPEC REPOS:
   trunk:
-    - AFNetworking
-    - Masonry
     - MBProgressHUD
     - MMKV
     - MMKVCore
     - ReactiveObjC
-    - SDWebImage
 
 EXTERNAL SOURCES:
   AppCompatPod:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  AppCompatPod: f160110e1419888cb9f38e76b78f0c0ebfb588b0
-  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  AppCompatPod: cc90b6227caf76d274da6b81fc9eb3a8d6fdd4c0
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MMKV: f281020c9d9be5eb7a03ae746dc4deb570e46c23
   MMKVCore: df0565f6b58463604731a68ba6cd89bc0b2d1d55
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SDWebImage: 53179a2dba77246efa8a9b85f5c5b21f8f43e38f
 
 PODFILE CHECKSUM: 9cfa1f3717c24a58911fba6109090cb6896339b8
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppCompatPod'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'A short description of AppCompatPod.'
 
 # This description is used to generate tags and improve search results.
@@ -41,9 +41,6 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   # s.dependency 'CocoaLumberjack'
   s.dependency 'MBProgressHUD', '~> 1.2.0'
-  s.dependency 'Masonry', :git => 'https://github.com/SnapKit/Masonry.git', :commit => '8bd77ea'
   s.dependency 'ReactiveObjC', '~> 3.1.1'
   s.dependency 'MMKV'
-  s.dependency 'AFNetworking'
-  s.dependency 'SDWebImage'
 end

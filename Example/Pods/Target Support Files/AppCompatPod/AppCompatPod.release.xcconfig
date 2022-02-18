@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/AppCompatPod
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/MMKV" "${PODS_CONFIGURATION_BUILD_DIR}/MMKVCore" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/MMKV" "${PODS_CONFIGURATION_BUILD_DIR}/MMKVCore" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "CoreFoundation" -framework "CoreGraphics" -framework "Foundation" -framework "ImageIO" -framework "MBProgressHUD" -framework "MMKV" -framework "Masonry" -framework "QuartzCore" -framework "ReactiveObjC" -framework "SDWebImage" -framework "UIKit"
+OTHER_LDFLAGS = $(inherited) -framework "CoreFoundation" -framework "CoreGraphics" -framework "Foundation" -framework "MBProgressHUD" -framework "MMKV" -framework "QuartzCore" -framework "ReactiveObjC"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}
